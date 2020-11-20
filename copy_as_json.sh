@@ -31,7 +31,7 @@ print "[\n";
 $rowData=<>;
 while($rowData) {
 
-    print "\t[\n";
+    print "\t{\n";
 
     # remove line ending
     chomp($rowData);
@@ -48,7 +48,7 @@ while($rowData) {
         $cellData =~ s/↵/\n/g;
         $cellData =~ s/⇥/\t/g;
 
-        print "\t\t\"$header[$i]\" => ";
+        print "\t\t\"$header[$i]\": ";
 
         # check for data types
         if($cellData eq "NULL") {
@@ -72,7 +72,7 @@ while($rowData) {
 
     }
 
-    print "\t]";
+    print "\t}";
 
     # get next row
     $rowData=<>;
