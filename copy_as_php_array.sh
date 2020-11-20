@@ -33,6 +33,7 @@ $result = json_encode($result, JSON_PRETTY_PRINT);
 $replaceCharacters = [
     '{' => '[',
     '}' => ']',
+    ': ' => ' => ',
 ];
 
 foreach ($replaceCharacters as $key => $value) {
