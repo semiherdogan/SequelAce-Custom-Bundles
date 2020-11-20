@@ -6,7 +6,7 @@ This repo contains my custom bundle scripts for [Sequel Ace](https://github.com/
 * Copies selected data as php array (short array syntax).
 * For input and output configuration you may reference ss below.
 
-### [copy as json using php](copy_as_json.sh)
+### [copy as json](copy_as_json.sh)
 * Copies selected data as json (without "data" key).
 * For input and output configuration you may reference ss below.
 
